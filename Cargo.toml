@@ -1,0 +1,8 @@
+﻿[workspace]
+resolver = "2"
+members = [
+  "crates/revelation-core",
+  "crates/revelation-cli",
+  "crates/revelation-gui",
+  "crates/revelation-logs"
+]

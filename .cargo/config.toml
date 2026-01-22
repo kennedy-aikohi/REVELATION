@@ -1,0 +1,4 @@
+[env]
+LIBCLANG_PATH = "C:/Program Files/LLVM/bin"
+YARA_INCLUDE_DIR = "C:/vcpkg/installed/x64-windows/include"
+YARA_LIBRARY_PATH = "C:/vcpkg/installed/x64-windows/lib"

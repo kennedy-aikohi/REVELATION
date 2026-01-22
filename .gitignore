@@ -1,0 +1,25 @@
+# Rust build output
+/target
+
+# Executables and binaries
+**/*.exe
+**/*.dll
+**/*.pdb
+**/*.so
+**/*.dylib
+
+# Logs
+**/*.log
+
+# Vendor / third-party repos
+rules/**/repos/
+rules/**/.git/
+rules/**/.github/
+
+# Distribution artifacts
+scripts/dist/
+
+# OS / IDE
+.DS_Store
+.idea
+.vscode
