@@ -48,6 +48,7 @@ Ideal for:
 ## 🖥️ Screenshots
 
 ### Overview
+
 ![REVELATION Overview](assets/Revelation.png)
 
 *(Additional screenshots can be added to `assets/` and referenced here.)*
@@ -76,48 +77,28 @@ Ideal for:
 
 ### Build
 
-```bash
-cargo build --release
+Run the following command:
 
-Build Output
+`cargo build --release`
+
+---
+
+### Build Output
 
 After running the build command locally, the compiled binary will be located at:
 
-target/release/revelation-gui.exe
+`target/release/revelation-gui.exe`
 
+---
 
-The target/ directory is generated locally by Cargo and is not committed to the repository.
+## Required DLLs for YARA Rules
 
-Required DLLs for YARA Rules
-
-REVELATION uses YARA for disk scanning and supports updating rules from YARA and Sigma repositories.
+REVELATION uses YARA for disk scanning and supports updating rules from YARA and Sigma repositories.  
 To enable this functionality on Windows, the following OpenSSL DLLs must be present in the same directory as the compiled binary:
 
-libcrypto-3-x64.dll
-
-libssl-3-x64.dll
+- `libcrypto-3-x64.dll`
+- `libssl-3-x64.dll`
 
 Place these DLLs in:
 
-target/release/
-
-
-If these DLLs are missing, YARA-based scanning and rule updates will fail to initialize.
-
-License
-
-This project is released for research and educational purposes only.
-See the LICENSE file for full details.
-
-Author
-
-Kennedy Aikohi
-
-LinkedIn: https://linkedin.com/in/aikohikennedy
-
-GitHub: https://github.com/kennedy-aikohi
-
-Feedback
-
-This is a personal learning and research project.
-Feedback, ideas, and DFIR discussions are always welcome.
+`target/release/`
